@@ -46,16 +46,5 @@ Aşağıdaki kareler mevcut yaklaşık 177 saniyelik oynanış kaydından çıka
 ![Tabela sorularına yaklaşırken](docs/gameplay-2.jpg)
 ![Parkur ve puan görünümü](docs/gameplay-3.jpg)
 
-## Doğrulama ve geliştirme notları
-
-13 proje C# dosyası incelendi; paket kopyalarında MonoBehaviour dosya adları sınıf adlarıyla eşleştirildi. Kod içeriği değiştirilmedi. Unity derleme ve Play Mode testleri bu portföy hazırlığında çalıştırılmadı; ekran görüntüleri mevcut kayıttan alındı.
-
-Kod incelemesinde sonraki geliştirmeler için belirlenen noktalar:
-
-- Sarı ışık şu an kırmızı ışık etiketiyle aynı cezayı tetikliyor.
-- Son soruya yanlış cevap verilirse başarılı bitiş akışı tetiklenmiyor.
-- Cevap sesi çağrılarında AudioSource eksikliği için ek kontrol gerekiyor.
-- Karakter zıplama kodunda grounded kontrolü yok.
-- Menü açıkken araç kontrolünü durdurma ve puanlama davranışları Play Mode'da test edilmeli.
 
 GitHub: [nursimaotcu](https://github.com/nursimaotcu)
