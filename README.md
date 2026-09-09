@@ -6,7 +6,7 @@ Unity ve C# ile geliştirdiğim oyun programlama projesi. Oyuncu aracı parkurda
 
 ## Kendi katkım
 
-Bu depodaki oyun kodlarını ben yazdım. Görsel ve ses varlıklarını Unity Asset Store'dan temin ettim. Tabela ve direk parçalarını birleştirerek işaretleri oluşturdum; tabelaları tek tek yerleştirdim ve parkurun sahne düzenini hazırladım. Hazır modellerin üretimini kendi çalışmam olarak sunmuyorum.
+Bu depodaki oyun kodlarını ben yazdım. Görsel ve ses varlıklarını Unity Asset Store'dan temin ettim. Tabela ve direk parçalarını birleştirerek işaretleri oluşturdum; tabelaları tek tek yerleştirdim ve parkurun sahne düzenini hazırladım.
 
 ## Oyun sistemleri
 
@@ -17,7 +17,7 @@ Bu depodaki oyun kodlarını ben yazdım. Görsel ve ses varlıklarını Unity A
 - Hız, limit, puan ve uyarı arayüzleri; oyun sonu ve yeniden başlatma.
 - Müzik ve efekt ses düzeyi ayarları.
 
-Depoda ayrıca aynı proje klasöründeki karakter hareketi, raycast etkileşimi, havai fişek, top zıplatma ve WheelCollider araç kontrolü çalışmaları bulunur. Bunların tümünün ana oyun sahnesinde etkin olduğu doğrulanmadı.
+Depoda ayrıca aynı proje klasöründeki karakter hareketi, raycast etkileşimi, havai fişek, top zıplatma ve WheelCollider araç kontrolü çalışmaları bulunur.
 
 ## Kod rehberi
 
@@ -31,20 +31,25 @@ Depoda ayrıca aynı proje klasöründeki karakter hareketi, raycast etkileşimi
 | `araba.cs` | WheelCollider ve dokunmatik düğme girişleri olan alternatif araç kontrolü |
 | Diğer `Scripts/` dosyaları | Karakter, nesne etkileşimi ve efekt çalışmaları |
 
-## Teknik bağlam ve kapsam
+## Proje yapısı
 
-Özgün proje sürümü **Unity 6000.3.9f1**, ana sahnesi `Assets/Scenes/Oyun.unity`. Paket manifestinde URP 17.3.0, Input System 1.18.0 ve Cinemachine 3.1.6 bulunuyor. Gösterilen kodlar eski `UnityEngine.Input` girişlerini de kullanıyor.
+Kullandığım Unity sürümü **Unity 6000.3.9f1**, ana sahnesi `Assets/Scenes/Oyun.unity`. Paket manifestinde URP 17.3.0, Input System 1.18.0 ve Cinemachine 3.1.6 bulunuyor. Gösterilen kodlar eski `UnityEngine.Input` girişlerini de kullanıyor.
 
-**Bu depo kaynak kodu ve görsel tanıtım paketidir; tek başına açılıp oynanabilen tam Unity projesi değildir.** Asset Store paketlerinin ham dosyaları, sahneler, Inspector bağlantıları, `Library`, APK ve derleme yedekleri dahil değildir. Hazır varlıkların yeniden dağıtım koşulları bu hazırlıkta doğrulanmadı. [Varlık notları](docs/ASSETS.md).
+**Bu depo kaynak kodu ve görsel tanıtım paketidir; tek başına açılıp oynanabilen tam Unity projesi değildir.** Asset Store paketlerinin ham dosyaları, sahneler, Inspector bağlantıları, `Library`, APK ve derleme yedekleri dahil değildir. Hazır varlıkların paylaşım koşullarını netleştirmeden ham dosyalarını repoya eklemiyorum. [Varlık notları](docs/ASSETS.md).
 
 Kodları denemek için uygun bir Unity projesinde `Scripts/` içeriğini içe aktarın; TextMesh Pro/UGUI bağımlılıklarını ve eski Input desteğini yapılandırın. Rigidbody, collider, etiket, seçenek kutuları ve UI/ses alanlarını Inspector'da bağlamak gerekir. Bu işlem özgün sahneyi otomatik oluşturmaz.
 
 ## Görseller
 
-Aşağıdaki kareler mevcut yaklaşık 177 saniyelik oynanış kaydından çıkarılmıştır; yeni bir test çalıştırmasının görüntüleri değildir.
+Oyundan aldığım ekran kaydından görüntüler:
 
 ![Tabela sorularına yaklaşırken](docs/gameplay-2.jpg)
 ![Parkur ve puan görünümü](docs/gameplay-3.jpg)
 
+## Geliştirmeye devam edeceğim noktalar
 
-GitHub: [nursimaotcu](https://github.com/nursimaotcu)
+- Sarı ışık şu an kırmızı ışık etiketiyle aynı cezayı tetikliyor.
+- Son soruya yanlış cevap verilirse başarılı bitiş akışı tetiklenmiyor.
+- Cevap sesi çağrılarında AudioSource eksikliği için ek kontrol gerekiyor.
+- Karakter zıplama kodunda grounded kontrolü yok.
+- Menü açıkken araç kontrolünü durdurma ve puanlama davranışları Play Mode'da test edilmeli.
