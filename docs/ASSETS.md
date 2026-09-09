@@ -1,6 +1,6 @@
-# Hazır varlıklar
+# Kullandığım hazır varlıklar
 
-Geliştiricinin beyanına göre görsel/ses varlıkları Asset Store'dan edinilmiştir. Özgün klasörde görülen paket adları aşağıdadır; bu liste, her paketin ana sahnede kullanıldığını veya herkese açık yeniden dağıtım iznini doğrulamaz.
+Görsel ve ses varlıklarını Asset Store'dan aldım. Proje klasörümde şu paketler bulunuyor:
 
 - ARCADE - FREE Racing Car
 - KajamansRoads
@@ -10,6 +10,6 @@ Geliştiricinin beyanına göre görsel/ses varlıkları Asset Store'dan edinilm
 - unity-chan!
 - TextMesh Pro
 
-Hazır paketlerin kodları, model, doku ve ses dosyaları bu repoya kopyalanmadı. `StarterAssets/araba.cs` ise geliştiricinin kendi kodu beyanıyla proje betikleri arasına alındı; hazır StarterAssets denetleyicileri dahil edilmedi.
+Tabelaları direk parçalarıyla birleştirip sahneye tek tek yerleştirdim. Parkur düzeni ve oyun kodları bana ait. `araba.cs` dosyası da kendi araç kontrolü çalışmam.
 
-Geliştiricinin katkısı: oyun kodları, tabela/direk parçalarının birleştirilmesi, manuel yerleşim ve parkur sahnesinin düzenlenmesi. Tam proje paylaşımı için varlıkların kaynak bağlantıları ve ilgili paylaşım koşulları ayrıca belirlenmelidir.
+Bu repoda hazır paketlerin ham model, doku, ses ve örnek kod dosyalarını paylaşmıyorum. Tam proje paylaşımı için paketlerin kaynak bağlantılarını ve paylaşım koşullarını tamamlamam gerekiyor.
